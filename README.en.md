@@ -257,7 +257,7 @@ ai-console/
 
 ## 🗺️ Project status
 
-**Pre-release.** The engine, installer, wizard, and cartridge CLI are all implemented and working, but **end-to-end installation has not yet been verified on a clean machine.** Keep that in mind on a first run, and please open an issue wherever it breaks.
+**Pre-release.** The engine, installer, wizard, and cartridge CLI are all implemented and working, and **end-to-end installation was verified on a clean machine on 2026-08-19** (cpu-only default path, V1-V6 - see [testing-guide](docs/testing-guide.en.md#t1-results--the-cpu-only-default-path--v1v6-all-passed-measured-2026-08-19)). It is still pre-release because **performance numbers (tok/s, runtime memory) and multi-GPU assignment are unverified.** Please open an issue wherever it breaks.
 
 | Area | Status |
 | :-- | :-- |
@@ -265,7 +265,8 @@ ai-console/
 | `install.sh` — hardware detection, build, systemd registration | Working (preview it with `--dry-run`) |
 | Web onboarding wizard · chat UI | Working |
 | Cartridge CLI (validate · mount · unmount · purge) | Working |
-| End-to-end install verification on a clean machine | **Not done** |
+| End-to-end install verification on a clean machine | **Passed** (2026-08-19 - cpu-only default path, V1-V6) |
+| Low-end tier performance (tok/s, runtime memory) | Not measured |
 | Per-instance GPU assignment on multi-GPU hosts | Unverified |
 
 Security review notes and known limits are in [security-review.md](security-review.md). In particular, **the console binds to `0.0.0.0` by default and Qdrant runs without authentication** — do not place it on an untrusted network, and block the ports at your firewall.
