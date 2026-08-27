@@ -48,9 +48,9 @@ git clone https://github.com/adorahelen/ai-console-public.git ai-console && cd a
 
 > ⚠️ **cpu-only 티어의 기본값은 이제 `gemma4-e4b-q4`다**(Gemma-first 전환). 아래 블록은
 > `llama31-8b-q4`(`runtime=inprocess`)를 실측한 기록이라 프리셋을 고정해 재현한다.
-> **기본 경로(`./install.sh --tier cpu-only --yes`)는 아직 한 번도 돌려본 적이 없고**,
-> `runtime=server`라 `llama-cpp-python` 설치 줄이 없고 다운로드 리포도 다르다 —
-> 그 차이를 확인하는 것이 V1에서 새로 해야 할 일이다.
+> **기본 경로(`./install.sh --tier cpu-only --yes`)는 2026-08-19 에 V1~V6 완주했다** —
+> 결과는 아래 [T1 실행 결과](#t1-실행-결과--cpu-only-기본-경로--v1v6-완주-2026-08-19-실측) 절.
+> `runtime=server`라 `llama-cpp-python` 설치 줄이 없고 다운로드 리포도 다르다.
 
 단계별 기대 출력 (2026-07-21 VM 실측 반영):
 

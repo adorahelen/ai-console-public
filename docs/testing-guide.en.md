@@ -48,9 +48,9 @@ Expected: the `ai-console` directory contains `install.sh`, `models.yaml`, and `
 
 > ⚠️ **The `cpu-only` tier now defaults to `gemma4-e4b-q4`** (the Gemma-first switch). The block
 > below records a measured run of `llama31-8b-q4` (`runtime=inprocess`), so the preset is pinned
-> to reproduce it. **The default path (`./install.sh --tier cpu-only --yes`) has never been run**;
-> being `runtime=server` it has no `llama-cpp-python` step and downloads a different repo —
-> confirming that difference is the new work in V1.
+> to reproduce it. **The default path (`./install.sh --tier cpu-only --yes`) passed V1-V6 on
+> 2026-08-19** - see [T1 results](#t1-results--the-cpu-only-default-path--v1v6-all-passed-measured-2026-08-19)
+> below. Being `runtime=server` it has no `llama-cpp-python` step and downloads a different repo.
 
 Expected output per stage (reflecting the 2026-07-21 VM run):
 
