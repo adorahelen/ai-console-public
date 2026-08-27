@@ -258,7 +258,7 @@ python ingest.py <소스_디렉터리> <카트리지_이름>   # 추출 → 변�
 ```
 ai-console/
 │
-│  ── 🧠 엔진 코어 (루트 평면 py 약 30개 — 도메인 언급 0건) ──
+│  ── 🧠 엔진 코어 (루트 평면 py 35개 — 도메인 언급 0건) ──
 ├── qa_llm.py                    # 메인 — FastAPI 서버·전체 API 엔드포인트
 ├── handler_base.py              # 핸들러 공통 베이스
 ├── handler_{llama,gemma,gpt_oss,openai,claude,qwen}.py   # 모델별 핸들러 6종
